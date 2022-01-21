@@ -45,7 +45,7 @@ const Home: NextPage = () => {
           <div className={styles.cities}>
           {
               brazilcities.map(i => {
-                return <div className={`${styles.city} ${styles.show}`}><h4>{i.name}</h4></div>
+                return <div key={`key${i.name}`} className={`${styles.city} ${styles.show}`}><h4>{i.name}</h4></div>
               })
             }
           </div>
